@@ -19,6 +19,7 @@ func main() {
 	uploadBytes := flag.Uint64("upload-bytes", 0, "upload bytes")
 	downloadBytes := flag.Uint64("download-bytes", 0, "download bytes")
 	_ = flag.String("transport", "", "flag is ignored")
+	_ = flag.Uint64("secret-key-seed", 0, "server secret key seed")
 	flag.Parse()
 
 	if *serverAddr == "" {
