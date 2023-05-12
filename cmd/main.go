@@ -18,6 +18,7 @@ func main() {
 	serverAddr := flag.String("server-address", "", "server address, required")
 	uploadBytes := flag.Uint64("upload-bytes", 0, "upload bytes")
 	downloadBytes := flag.Uint64("download-bytes", 0, "download bytes")
+	_ = flag.String("transport", "", "flag is ignored")
 	flag.Parse()
 
 	if *serverAddr == "" {
